@@ -1,10 +1,11 @@
 # iotapp-home-security-dapp
 
-## Project setup
+## Install Dependencies
 ```
 npm install
 ```
 
+## Project Setup
 In the ```HelloWorld.vue``` file (around line 107), add your channel app keys to the API functions like so: 
 
 #### Examples
@@ -12,7 +13,6 @@ In the ```HelloWorld.vue``` file (around line 107), add your channel app keys to
     iotapp.getPrivateChain("myOz8FZXhT4lBzJplmXtUbneP8eeXpSp","3imNnMduakmu6JmFafIxnu8WJj28BjQI")
 
     iotapp.getLatestTx("myOz8FZXhT4lBzJplmXtUbneP8eeXpSp","3imNnMduakmu6JmFafIxnu8WJj28BjQI")
-    
 ```
 
 Also, add your app keys to the ```pollData() ``` function, around line 152:
@@ -26,8 +26,6 @@ Also, add your app keys to the ```pollData() ``` function, around line 152:
       }, 2000);
     },
 ```
-
-
 
 ### Compiles and hot-reloads for development
 ```
