@@ -6,7 +6,7 @@ npm install
 ```
 
 ## Project Setup
-In the ```HelloWorld.vue``` file (around line 107), add your channel app keys to the API functions like so: 
+In the ```HelloWorld.vue``` file (around line 107), add your channel app keys to the API functions. Then, around line 154, add your app keys to the ```pollData() ``` function.
 
 #### Examples
 ```javascript
@@ -14,9 +14,6 @@ In the ```HelloWorld.vue``` file (around line 107), add your channel app keys to
 
     iotapp.getLatestTx("myOz8FZXhT4lBzJplmXtUbneP8eeXpSp","3imNnMduakmu6JmFafIxnu8WJj28BjQI")
 ```
-
-Also, add your app keys to the ```pollData() ``` function, around line 152:
-
 ```javascript
     pollData() {
       this.polling = setInterval(() => {
