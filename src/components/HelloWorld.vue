@@ -104,11 +104,11 @@ export default {
   
   mounted() {
     // Pass Your App Keys
-    iotapp.getPrivateChain("myOz8FZXhT4lBzJplmXtUbneP8eeXpSp","3imNnMduakmu6JmFafIxnu8WJj28BjQI")
+    iotapp.getPrivateChain("YOUR_IOTAPP_CHANNEL_URL")
       .then((data) => (this.historyData = data))
       .catch((err) => console.log("Error occurred:", err));
 
-    iotapp.getLatestTx("myOz8FZXhT4lBzJplmXtUbneP8eeXpSp","3imNnMduakmu6JmFafIxnu8WJj28BjQI")
+    iotapp.getLatestTx("YOUR_IOTAPP_CHANNEL_URL")
       .then((data) => (this.latestData = data))
       .catch((err) => console.log("Error occurred:", err));
 
@@ -151,7 +151,7 @@ export default {
     //Polls getLatestTx() every 2 seconds interval. Send updates
     pollData() {
       this.polling = setInterval(() => {
-        iotapp.getLatestTx("myOz8FZXhT4lBzJplmXtUbneP8eeXpSp", "3imNnMduakmu6JmFafIxnu8WJj28BjQI")
+        iotapp.getLatestTx("YOUR_IOTAPP_CHANNEL_URL")
           .then((data) => (this.latestData = data))
           .catch((err) => console.log("Error occurred:", err));
       }, 2000);
