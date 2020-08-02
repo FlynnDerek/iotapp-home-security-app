@@ -6,7 +6,7 @@ npm install
 ```
 
 ## Project Setup
-In the ```HelloWorld.vue``` file (around line 107), add your channel app keys to the API functions. Then, around line 154, add your app keys to the ```pollData() ``` function.
+In the ```HelloWorld.vue``` file (around line 107), add your channel API keys to the API functions. Then, around line 154, add your API keys to the ```pollData() ``` function.
 
 #### Examples
 ```javascript
