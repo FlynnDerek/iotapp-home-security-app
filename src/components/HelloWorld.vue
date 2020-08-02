@@ -104,11 +104,11 @@ export default {
   
   mounted() {
     // Pass Your App Keys
-    iotapp.getPrivateChain("YOUR_IOTAPP_CHANNEL_URL")
+    iotapp.getPrivateChain("YOUR_IOTAPP_API_KEY")
       .then((data) => (this.historyData = data))
       .catch((err) => console.log("Error occurred:", err));
 
-    iotapp.getLatestTx("YOUR_IOTAPP_CHANNEL_URL")
+    iotapp.getLatestTx("YOUR_IOTAPP_API_KEY")
       .then((data) => (this.latestData = data))
       .catch((err) => console.log("Error occurred:", err));
 
