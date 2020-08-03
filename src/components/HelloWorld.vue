@@ -103,11 +103,12 @@ export default {
 
   
   mounted() {
-    // Pass Your App Keys
+    // Get all movement history by passing your channel API key
     iotapp.getPrivateChain("YOUR_IOTAPP_API_KEY")
       .then((data) => (this.historyData = data))
       .catch((err) => console.log("Error occurred:", err));
 
+    // Get the latest movements by passing your channel API key
     iotapp.getLatestTx("YOUR_IOTAPP_API_KEY")
       .then((data) => (this.latestData = data))
       .catch((err) => console.log("Error occurred:", err));
@@ -148,7 +149,8 @@ export default {
   },
 
   methods: {
-    //Polls getLatestTx() every 2 seconds interval. Send updates
+  
+    //Polls getLatestTx() every 2 seconds. Updates in real-time.
     pollData() {
       this.polling = setInterval(() => {
         iotapp.getLatestTx("YOUR_IOTAPP_CHANNEL_URL")
@@ -157,6 +159,8 @@ export default {
       }, 2000);
     },
 
+    /* Polls for new movments, if a new movement is detected and the
+       Alert switch is on, a small pinging sound is activated */
     pollAlert() {
       this.polling2 = setInterval(() => {
         var valueDiv = document.getElementById("tRow").innerText;
