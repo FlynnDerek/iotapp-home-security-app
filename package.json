@@ -14,7 +14,7 @@
     "core-js": "^3.6.5",
     "iotapp-api": "^1.0.3",
     "jquery": "^3.5.1",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
     "vue-moment": "^4.1.0",
