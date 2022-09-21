@@ -19,7 +19,7 @@
     "vue": "^2.6.11",
     "vue-moment": "^4.1.0",
     "vuesax": "^3.11.17",
-    "vuetify": "^2.3.6"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
